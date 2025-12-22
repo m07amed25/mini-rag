@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "f7fc9602-c504-42d4-9f91-17d754e69b53",
+		"name": "mini-rag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42539799",
+		"_collection_link": "https://url-api.postman.co/workspace/Team-Workspace~3189f5e2-2d01-482f-889d-29f1e7973142/collection/42539799-f7fc9602-c504-42d4-9f91-17d754e69b53?action=share&source=collection_link&creator=42539799"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/welcome",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "http://localhost:8000/"
+		}
+	]
+}
