@@ -8,9 +8,9 @@ baseRouter = APIRouter(
 
 @baseRouter.get("/")
 async def welcome_message():
-    appName = os.getenv("APP_NAME")
-    appVersion = os.getenv("APP_VERSION")
+    app_name = os.getenv("APP_NAME")
+    app_version = os.getenv("APP_VERSION")
     return {
-        "message": f"Welcome to {appName} application!",
-        "version": appVersion
+        "message": f"Welcome to {app_name} application!",
+        "version": app_version
         }
